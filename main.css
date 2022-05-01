@@ -3,7 +3,7 @@ body {
      overflow-x: hidden;
 }
 #home {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -11,7 +11,7 @@ body {
 }
 #home::after {
     content: '';
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     height: 14rem;
     bottom: 0;
@@ -33,8 +33,8 @@ body {
     bottom: 0;
 }
 .row {
- position: relative;
- z-index: 1;
+ /*position: relative;*/
+ /*z-index: 1;*/
  background: url(rounds.png) no-repeat right;
  /*! background-position: top; */
  background-size:contain;
@@ -56,10 +56,10 @@ body {
  height:auto
 }
 .leftcol {
-    position: relative;
+    /*position: relative;*/
     background: url(layer_3_448.png) no-repeat left;
     background-size: contain;
-    z-index: 2;
+    /*z-index: 2;*/
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -72,7 +72,7 @@ body {
     margin-left: 1.5rem;
 }
 .rightcol {
-    position: sticky;
+    /*position: sticky;*/
     display: flex;
     justify-content: flex-start;
     flex-direction:column;
@@ -84,7 +84,7 @@ body {
     background-size: contain;
 }
 .leftcolin {
-    position: relative;
+    /*position: relative;*/
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -1418,16 +1418,3 @@ footer .copyright{
 .label1 {
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

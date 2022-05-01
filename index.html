@@ -6,6 +6,7 @@
         <title>НАЧАЛО РАБОТЫ С BRACKETS</title>
         <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="modal_login.css">
     </head>
     <body>
         <div class="First_part">
@@ -18,7 +19,9 @@
                                 <li class="m-l"><a class="m-ll" href="#pricing">Pricing</a></li>
                                 <li class="m-l"><a class="m-ll" href="#test">Testiminial</a></li>
                                 <li class="m-l"><a class="m-ll" href="#faq">FAQ</a></li>
-                                <li class="m-l"><a class="m-ll try-f" href="#faq">Try for free</a></li>
+                                <li class="m-l"><a class="m-ll try-f popup-link" href="#popup">Try for free</a></li>
+
+
                             </ul>
                         </div>
                     </div>
@@ -36,7 +39,29 @@
                             <p1> Increase productivity with a simple to-do app. app for managing your personal budgets.
                             </p1>
                             <div class="home-btn">
-                                <a href="#" class="btn main-btn">Try for free</a>
+                                <a class="btn main-btn popup-link" href="#popup">Try for free</a>
+
+                                <div id="popup" class="popup">
+                                    <div class="popup_body">
+                                        <div class="popup_content">
+                                            <a href="" class="popup_close close-popup"><img class="cross" src="cross.png" alt=""></a>
+                                            <div class="popup_title">Registration</div>
+                                            <div class="popup_text">
+                                                <form action="" id="pop_wrapper" class="pop_wrapper">
+                                                    <label for="name">Name: </label>
+                                                    <input id="name" class="login-input" type="text"><br>
+                                                    <label for="email">Email: </label>
+                                                    <input id="email" class="login-input" type="text"><br>
+                                                    <label for="phoneNumber">Phone Number: </label>
+                                                    <input id="phoneNumber" class="login-input" type="text"><br>
+                                                    <input class="btnSend" type="submit" value="Send" disabled>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script src="modal_login.js"></script>
+
                                 <a href="#" class="btn unstyled-btn"> Watch demo video </a>
                             </div> 
                          </div>  
