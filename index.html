@@ -6,7 +6,6 @@
         <title>НАЧАЛО РАБОТЫ С BRACKETS</title>
         <meta name="description" content="Интерактивное руководство по началу работы в Brackets.">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="modal_login.css">
     </head>
     <body>
         <div class="First_part">
@@ -19,9 +18,7 @@
                                 <li class="m-l"><a class="m-ll" href="#pricing">Pricing</a></li>
                                 <li class="m-l"><a class="m-ll" href="#test">Testiminial</a></li>
                                 <li class="m-l"><a class="m-ll" href="#faq">FAQ</a></li>
-                                <li class="m-l"><a class="m-ll try-f popup-link" href="#popup">Try for free</a></li>
-
-
+                                <li class="m-l"><a class="m-ll try-f" href="#faq">Try for free</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,30 +36,11 @@
                             <p1> Increase productivity with a simple to-do app. app for managing your personal budgets.
                             </p1>
                             <div class="home-btn">
-                                <a class="btn main-btn popup-link" href="#popup">Try for free</a>
+                                <a href="#" class="btn main-btn">Try for free</a>
+                                <a href="#win" class="btn unstyled-btn" > Watch demo video </a>
 
-                                <div id="popup" class="popup">
-                                    <div class="popup_body">
-                                        <div class="popup_content">
-                                            <a href="" class="popup_close close-popup"><img class="cross" src="cross.png" alt=""></a>
-                                            <div class="popup_title">Registration</div>
-                                            <div class="popup_text">
-                                                <form action="" id="pop_wrapper" class="pop_wrapper">
-                                                    <label for="name">Name: </label>
-                                                    <input id="name" class="login-input" type="text"><br>
-                                                    <label for="email">Email: </label>
-                                                    <input id="email" class="login-input" type="text"><br>
-                                                    <label for="phoneNumber">Phone Number: </label>
-                                                    <input id="phoneNumber" class="login-input" type="text"><br>
-                                                    <input class="btnSend" type="submit" value="Send" disabled>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <script src="modal_login.js"></script>
                                 
-                                <a href="#" class="btn unstyled-btn"> Watch demo video </a>
+                                
                             </div> 
                          </div>  
                     </div>
@@ -72,6 +50,27 @@
                 </div>
             </div>
         </section>
+        
+        
+       
+         
+        
+        
+        
+          <!--            Модальное окно        -->
+        
+        
+        
+        <a href="index.html" class="overlay" id="win" onclick = "index.html(); return false;"></a>
+        <div class="popup">
+            <div class="video">
+		    <iframe width="853" height="480" src="https://www.youtube.com/embed/Eg7AunY2cpc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a class="close" title="Закрыть" href="index.html" onclick = "index.html(); return false;"></a>
+        </div>                 
+                                
+     
+          <!--                                 -->
         
                         
                     
@@ -637,90 +636,57 @@
                           empowerment.
                         </div>
                 </div>
-                <script>  
-                function nice(clicked_id) {
-                    
-                    var startState = document.getElementById("collapse"+clicked_id).style.display;
-                    var i;
-                    for(i = 1; i<=4; i++) {
-                        document.getElementById("collapse"+i).style.display = "none";
-                        document.getElementById("img"+i).src = "img/plus.png";
-                    };
-                    
-                    if(startState == "none") {
-                        document.getElementById("collapse"+clicked_id).style.display = "block";
-                        document.getElementById("img"+clicked_id).src = "img/minus.png";
-                    }
-                    else {
-                        document.getElementById("collapse"+clicked_id).style.display = "none";
-                        document.getElementById("img"+clicked_id).src = "img/plus.png";
-                    }
-                    
-                };  
-                </script>
+
                 <div class="card">
-                    <button id="1" class="card-header" onclick="nice(this.id)">
+                    <div class="card-header">
                         <h2>
                             <a class="btn4 btn-block">
                                 App installation failed, how to update system information?
                             </a>
                         </h2>
                         <div class="plus">
-                            <img id="img1" src="img/plus.png" alt="">
+                            <img src="img/plus.png" alt="">
                         </div>
                         
-                    </button>
-                    <div id = "collapse1">
-                    It is a niche tool that is used to generate different types of QR Codes. Depending on your purpose,<br>you can use our generator to create QR Codes to open a website, view a PDF file, listen to music,<br>watch Youtube videos, store image files, connect to a WiFi network, and much more.<br>Explore the different types of our product.
                     </div>
                 </div>
-                
 
                 <div class="card">
-                    <button id="2" class="card-header" onclick="nice(this.id)">
+                    <div class="card-header">
                         <h2>
                             <a class="btn4 btn-block">
                                 Website reponse taking time, how to improve?
                             </a>
                         </h2>
                         <div class="plus">
-                            <img id="img2" src="img/plus.png" alt="">
+                            <img src="img/plus.png" alt="">
                         </div>
-                    </button>
-                    <div id = "collapse2">
-                    It is a niche tool that is used to generate different types of QR Codes. Depending on your purpose,<br>you can use our generator to create QR Codes to open a website, view a PDF file, listen to music,<br>watch Youtube videos, store image files, connect to a WiFi network, and much more.<br>Explore the different types of our product.
                     </div>
                 </div>
 
                 <div class="card">
-                    <button id="3" class="card-header" onclick="nice(this.id)">
+                    <div class="card-header">
                         <h2>
                             <a class="btn4 btn-block">
                                 New update fixed all bug and issues
                             </a>
                         </h2>
                         <div class="plus">
-                            <img id="img3" src="img/plus.png" alt="">
+                            <img src="img/plus.png" alt="">
                         </div>
-                    </button>
-                    <div id = "collapse3">
-                    It is a niche tool that is used to generate different types of QR Codes. Depending on your purpose,<br>you can use our generator to create QR Codes to open a website, view a PDF file, listen to music,<br>watch Youtube videos, store image files, connect to a WiFi network, and much more.<br>Explore the different types of our product.
                     </div>
                 </div>
                 
                 <div class="card">
-                    <button id="4" class="card-header" onclick="nice(this.id)">
+                    <div class="card-header">
                         <h2>
                             <a class="btn4 btn-block">
                                 How to contact with riders emergency?
                             </a>
                         </h2>
                         <div class="plus">
-                            <img id="img4" src="img/plus.png" alt="">
+                            <img src="img/plus.png" alt="">
                         </div>
-                    </button>
-                    <div id = "collapse4">
-                    It is a niche tool that is used to generate different types of QR Codes. Depending on your purpose,<br>you can use our generator to create QR Codes to open a website, view a PDF file, listen to music,<br>watch Youtube videos, store image files, connect to a WiFi network, and much more.<br>Explore the different types of our product.
                     </div>
                 </div>
             </div>
